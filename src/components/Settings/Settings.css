@@ -1,0 +1,99 @@
+.settings-page {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.settings-section {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.settings-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.theme-btn {
+  background: var(--background);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.theme-btn:hover {
+  border-color: var(--primary);
+}
+
+.theme-btn.active {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(255,140,66,0.1);
+}
+
+.theme-btn span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.color-pickers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.color-picker-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-picker-row label {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.color-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-input-wrapper input[type="color"] {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.color-value {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+.settings-info {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
